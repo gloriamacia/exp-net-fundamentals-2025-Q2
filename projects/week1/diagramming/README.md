@@ -24,3 +24,9 @@ This setup allows House B to stream content from a Jellyfin media server hosted 
 I used Excalidraw to create a diagram and recorded a video explaining the media streaming setup between two houses.
 
 [TO DO: Add the link]
+
+📂 Committing Changes to Version Control
+
+I followed version control best practices by working from an issue-specific branch and submitting my updates through a pull request to the main repository on GitHub.
+
+![Version Control](assets/Screenshot%202025-06-09%20at%2014.13.27.png)

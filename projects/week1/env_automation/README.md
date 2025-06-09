@@ -14,6 +14,11 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 
 > To ensure clear instance identification and simplified networking.
 
+![VPC Setup](assets/Screenshot%202025-06-09%20at%2014.40.37.png)
+
+![VPC Setup](assets/Screenshot%202025-06-09%20at%2014.41.17.png)
+
+
 ---
 
 ### 2. 🔐 **Generated Key Pairs**
@@ -25,6 +30,8 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 * Ensured correct naming and region-specific setup
 
 > To allow secure login into instances without exposing credentials.
+
+![Key Pairs](assets/Screenshot%202025-06-09%20at%2014.43.38.png)
 
 ---
 
@@ -46,6 +53,11 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 
 > This supports safer management tasks without risking connection drops.
 
+![ENI](assets/Screenshot%202025-06-09%20at%2014.50.33.png)
+
+![ENI](assets/Screenshot%202025-06-09%20at%2014.51.07.png)
+
+
 ---
 
 ### 5. 🖥️ **Connected via RDP**
@@ -54,6 +66,9 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 * Successfully accessed the instance via Remote Desktop
 
 > Confirmed secure login and post-launch manageability.
+
+![RDP](assets/Screenshot%202025-06-09%20at%2014.55.36.png)
+
 
 ---
 
