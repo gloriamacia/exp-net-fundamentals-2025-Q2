@@ -48,4 +48,9 @@ These instances are part of my networking fundamentals bootcamp and serve as the
 * Tried to **change key pairs on a running instance**, which isn’t supported by AWS — learned the correct workaround using AMIs or SSM
 * Worked through **connecting and inspecting network configuration** on EC2 via CLI tools
 
+### **VPC Configuration with CFN** 
+
+I deployed a CloudFormation template created by the network bootcamp organizers that creates a **VPC with one public and one private subnet** in a single Availability Zone. It enables **DNS support**, configures an **Internet Gateway for the public subnet**, and sets up routing so that only the public subnet has internet access. The output includes the IDs of the VPC and both subnets for reference.
+
+
 
