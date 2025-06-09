@@ -1,10 +1,8 @@
 ## 🎯 **Goal**
 
-Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows, Ubuntu & RedHat instance as part of the networking bootcamp, following best practices for networking, access control, and remote connectivity.
+Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows, Ubuntu & RedHat instance as part of the networking bootcamp, following best practices for networking, access control, and remote connectivity. Finally, the VPC setup was automated using IaC via CFN. 
 
 ---
-
-## 🧱 **What I Did**
 
 ### 1. 🏗️ **Created a Custom VPC**
 
@@ -92,3 +90,29 @@ I repeated the same process for an Ubuntu Server and a Redhat Server.
 
 ![redhat](assets/Screenshot%202025-06-09%20at%2016.53.47.png)
 
+### 8. **🚀 Deploying the CloudFormation Template**
+
+1. **Set your AWS profile (if using a named profile):**
+
+   ```bash
+   export AWS_PROFILE=gloria-private-account
+   ```
+
+2. **Make sure the deploy script is executable:**
+
+   ```bash
+   chmod +x bin/deploy.sh
+   ```
+
+3. **Run the deployment script:**
+
+   ```bash
+   ./bin/deploy.sh
+   ```
+
+This will deploy the CloudFormation stack named `NetBootVPC` to the `us-east-1` region using the `template.yaml` file.
+
+> ✅ Make sure the `template.yaml` file is in the project root and correctly referenced in the script.
+
+
+![CFN](assets/Screenshot%202025-06-09%20at%2017.25.50.png)
