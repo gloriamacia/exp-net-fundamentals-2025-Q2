@@ -1,6 +1,6 @@
 ## 🎯 **Goal**
 
-Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as part of the networking bootcamp, following best practices for networking, access control, and remote connectivity.
+Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows, Ubuntu & RedHat instance as part of the networking bootcamp, following best practices for networking, access control, and remote connectivity.
 
 ---
 
@@ -26,7 +26,7 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 * Created and downloaded:
 
   * `.pem` for Linux
-  * `.ppk` for Windows (via PuTTYgen)
+  * `.ppk` for Windows (via PuTTYgen which I ended up not using as I am on MacOs)
 * Ensured correct naming and region-specific setup
 
 > To allow secure login into instances without exposing credentials.
@@ -78,3 +78,17 @@ Set up a secure AWS Virtual Private Cloud (VPC) and launch a Windows instance as
 * Attached it to the Windows instance
 
 > To maintain consistent public access even after restarts.
+
+![Elastic IP](assets/Screenshot%202025-06-09%20at%2016.54.08.png)
+
+![Elastic IP](assets/Screenshot%202025-06-09%20at%2016.46.10.png)
+
+
+### 7. **Ubuntu & RedHat** 
+
+I repeated the same process for an Ubuntu Server and a Redhat Server. 
+
+![ubuntu](assets/Screenshot%202025-06-09%20at%2016.45.47.png)
+
+![redhat](assets/Screenshot%202025-06-09%20at%2016.53.47.png)
+
