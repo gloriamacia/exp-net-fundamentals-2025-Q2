@@ -60,5 +60,8 @@ I completed the cross-platform IP configuration task for Windows, Ubuntu, and Re
 
 Watched a walkthrough on using Bicep for Windows Server deployment in Azure. Since we already configured our environment using the AWS Console, I didn’t recreate the setup. Instead, I dove into comparing Bicep, CloudFormation, and Terraform to understand how each handles IaC and what trade-offs exist between cloud-native and multi-cloud tooling.
 
+#### Cisco Packet Tracer
+
+Using Cisco Packet Tracer, I simulated a basic network with a router, switch, DHCP server, and a client PC. The goal was to observe the DHCP process in action as the PC automatically obtained its IP configuration. I analyzed each step of the DORA exchange (Discover, Offer, Request, Acknowledgment) and verified that the client successfully received its IP address from the server. This setup helped me understand how DHCP functions at both the data link and application layers within a LAN.
 
 
