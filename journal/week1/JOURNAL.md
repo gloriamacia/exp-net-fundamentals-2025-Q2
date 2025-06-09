@@ -52,5 +52,9 @@ These instances are part of my networking fundamentals bootcamp and serve as the
 
 I deployed a CloudFormation template created by the network bootcamp organizers that creates a **VPC with one public and one private subnet** in a single Availability Zone. It enables **DNS support**, configures an **Internet Gateway for the public subnet**, and sets up routing so that only the public subnet has internet access. The output includes the IDs of the VPC and both subnets for reference.
 
+#### IP Management 
+
+I completed the cross-platform IP configuration task for Windows, Ubuntu, and Red Hat EC2 instances. I verified dynamic IP assignment via DHCP, tested static IP setup using Netplan (Ubuntu) and nmcli (Red Hat), and documented everything with screenshots and CLI commands in the README. The goal was to ensure clear, repeatable steps for future network troubleshooting and bootcamp labs.
+
 
 
