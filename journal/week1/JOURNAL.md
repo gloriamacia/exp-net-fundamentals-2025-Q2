@@ -56,5 +56,9 @@ I deployed a CloudFormation template created by the network bootcamp organizers 
 
 I completed the cross-platform IP configuration task for Windows, Ubuntu, and Red Hat EC2 instances. I verified dynamic IP assignment via DHCP, tested static IP setup using Netplan (Ubuntu) and nmcli (Red Hat), and documented everything with screenshots and CLI commands in the README. The goal was to ensure clear, repeatable steps for future network troubleshooting and bootcamp labs.
 
+#### Azure Bicep
+
+Watched a walkthrough on using Bicep for Windows Server deployment in Azure. Since we already configured our environment using the AWS Console, I didn’t recreate the setup. Instead, I dove into comparing Bicep, CloudFormation, and Terraform to understand how each handles IaC and what trade-offs exist between cloud-native and multi-cloud tooling.
+
 
 

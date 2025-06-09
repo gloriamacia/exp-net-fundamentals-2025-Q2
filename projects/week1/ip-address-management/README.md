@@ -165,3 +165,23 @@ Use `nmcli con show` to find the correct `<connection-name>` (usually `eth0` or 
 
 Used both `ip` and `nmcli` to inspect interfaces. Successfully tested static and dynamic IP assignment using NetworkManager.
 
+---
+
+### Azure Bicep 
+
+I watched the tutorial on deploying Windows Server using Azure Bicep, but chose not to reimplement the example since we had already set up our EC2 instances using the AWS Console. Instead, I explored the differences between Bicep (Azure), CloudFormation (AWS), and Terraform to better understand how infrastructure as code tools compare across cloud platforms.
+
+🛠️ **Comparing IaC Tools: Bicep, CloudFormation, and Terraform**
+
+
+| Feature              | **Bicep** (Azure)            | **CloudFormation** (AWS)   | **Terraform** (Multi-cloud)     |
+| -------------------- | ---------------------------- | -------------------------- | ------------------------------- |
+| **Cloud Support**    | Azure only                   | AWS only                   | AWS, Azure, GCP, many others    |
+| **Language**         | Bicep (simple DSL)           | YAML / JSON                | HCL (Terraform’s own syntax)    |
+| **State Management** | No external state            | No external state          | Uses local or remote state file |
+| **Modularity**       | Supports modules             | Nested stacks              | Strong module system            |
+| **Use Case Fit**     | Best for Azure-native setups | Best for AWS-native setups | Best for multi-cloud or hybrid  |
+
+This helped me better understand when and why each tool might be used in real-world cloud deployments.
+
+
