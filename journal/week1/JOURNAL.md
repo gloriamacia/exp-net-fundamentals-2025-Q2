@@ -89,6 +89,10 @@ I set up a simple static website hosted via Python’s built-in HTTP server on a
 
 * **✅ Final Result**: Once both firewall and AWS security settings were updated, I was able to access the site via the EC2 public IP and port `8000` from my local machine.
 
+#### Linux Networking 
+
+I tested connectivity between two EC2 instances — one Ubuntu and one Red Hat — by using `ping` and `tcpdump`. I SSHed into both machines using their private IPs and verified their network interfaces. On the Red Hat instance, I installed `tcpdump` and captured incoming ICMP packets on `enX1` while sending pings from the Ubuntu instance. The successful packet exchange confirmed bidirectional communication across the second network interface. I also used `wget` on Ubuntu to download a webpage and validated that basic outbound internet access was working correctly.
+
 
 
 
