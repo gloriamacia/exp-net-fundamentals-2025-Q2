@@ -64,4 +64,9 @@ Watched a walkthrough on using Bicep for Windows Server deployment in Azure. Sin
 
 Using Cisco Packet Tracer, I simulated a basic network with a router, switch, DHCP server, and a client PC. The goal was to observe the DHCP process in action as the PC automatically obtained its IP configuration. I analyzed each step of the DORA exchange (Discover, Offer, Request, Acknowledgment) and verified that the client successfully received its IP address from the server. This setup helped me understand how DHCP functions at both the data link and application layers within a LAN.
 
+#### Windows Networking 
+
+I explored and analyzed the networking setup of my Windows VM on AWS. I inspected the IP configuration (`ipconfig`), confirmed connectivity with AWS services using `ping` and `tracert`, and reviewed active network connections via `netstat`. I also examined the routing table using `route print`, identifying multiple interfaces and gateways, and observed how traffic flows within the subnet and to AWS metadata services. This gave me a clearer understanding of how the VM is connected and how network diagnostics can be performed effectively.
+
+
 
