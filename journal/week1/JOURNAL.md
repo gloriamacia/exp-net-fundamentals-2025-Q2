@@ -68,5 +68,28 @@ Using Cisco Packet Tracer, I simulated a basic network with a router, switch, DH
 
 I explored and analyzed the networking setup of my Windows VM on AWS. I inspected the IP configuration (`ipconfig`), confirmed connectivity with AWS services using `ping` and `tracert`, and reviewed active network connections via `netstat`. I also examined the routing table using `route print`, identifying multiple interfaces and gateways, and observed how traffic flows within the subnet and to AWS metadata services. This gave me a clearer understanding of how the VM is connected and how network diagnostics can be performed effectively.
 
+#### Windows Firewall Rules
+
+Certainly! Here's a concise and well-structured journal entry summarizing what you did, the issues you encountered, and how you resolved them:
+
+---
+
+**📓 Journal Entry – Serving a Website on Windows EC2 VM**
+
+I set up a simple static website hosted via Python’s built-in HTTP server on a Windows EC2 instance. Initially, I created an `index.html` file directly on the desktop to avoid installing extra tools. I then used the command `python -m http.server 8000` to serve it locally.
+
+### Challenges & Resolutions:
+
+* **❌ Python not found in PATH**: Although Python was installed, it wasn’t added to the system PATH. I resolved this by manually locating `python.exe` under `C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps` and re-installing Python with the “Add to PATH” option checked.
+
+* **❌ Website not loading externally**: When trying to access the site from outside the VM using the EC2 public IP, it kept loading indefinitely. I realized the issue was due to **network restrictions**:
+
+  * **Windows Firewall** was blocking port `8000` ➝ I created a new inbound rule to allow TCP traffic on that port.
+  * **AWS EC2 Security Group** didn't allow inbound traffic on port `8000` ➝ I added a custom TCP rule to the instance's security group allowing access from anywhere (`0.0.0.0/0`).
+
+* **✅ Final Result**: Once both firewall and AWS security settings were updated, I was able to access the site via the EC2 public IP and port `8000` from my local machine.
+
+
+
 
 
