@@ -98,3 +98,10 @@ I tested connectivity between two EC2 instances — one Ubuntu and one Red Hat �
 #### GCP VM and IPTables
 
 By watching the video I explored how to manage outbound traffic from a GCP VM using `iptables`. I did not create a GCP account to implement it hands-on myself, instead I did the exercise suggested by Tim for the linux firewall on Ubuntu and Redhat.
+
+#### Cloud Networking
+
+##### AWS
+
+In this exercise, I successfully configured **VPC peering** between two AWS VPCs to enable cross-VPC communication. I created a peering connection between `bootcamp-test-vpc` and `bootcamp-test-peer-vpc`, then updated the route tables in both to allow bidirectional traffic. This setup demonstrates how VPCs in separate CIDR blocks can communicate securely without traversing the public internet — a fundamental concept for multi-tier cloud architectures.
+
