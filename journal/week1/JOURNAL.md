@@ -93,7 +93,9 @@ I set up a simple static website hosted via Python’s built-in HTTP server on a
 
 I tested connectivity between two EC2 instances — one Ubuntu and one Red Hat — by using `ping` and `tcpdump`. I SSHed into both machines using their private IPs and verified their network interfaces. On the Red Hat instance, I installed `tcpdump` and captured incoming ICMP packets on `enX1` while sending pings from the Ubuntu instance. The successful packet exchange confirmed bidirectional communication across the second network interface. I also used `wget` on Ubuntu to download a webpage and validated that basic outbound internet access was working correctly.
 
+#### Linux Firewall Rules
 
+ I successfully blocked outbound traffic on TCP port 4000 from both my Ubuntu and Red Hat EC2 instances. On Ubuntu, I used ufw to deny outbound connections, and on Red Hat, I configured firewalld with a rich rule to reject outgoing traffic using the correct nftables-compatible syntax. This setup was verified to prevent telnet connections to external servers, ensuring tighter egress control for testing or compliance purposes.
 
 
 
