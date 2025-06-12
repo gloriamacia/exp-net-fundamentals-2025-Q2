@@ -1,7 +1,5 @@
 ## Week 1 Journal 
 
-### 9 June 2025
-
 #### Diagraming
 
 I draw and documented a private media streaming setup where House B streams from a Jellyfin server in House A. 
@@ -97,5 +95,6 @@ I tested connectivity between two EC2 instances â€” one Ubuntu and one Red Hat â
 
  I successfully blocked outbound traffic on TCP port 4000 from both my Ubuntu and Red Hat EC2 instances. On Ubuntu, I used ufw to deny outbound connections, and on Red Hat, I configured firewalld with a rich rule to reject outgoing traffic using the correct nftables-compatible syntax. This setup was verified to prevent telnet connections to external servers, ensuring tighter egress control for testing or compliance purposes.
 
+#### GCP VM and IPTables
 
-
+By watching the video I explored how to manage outbound traffic from a GCP VM using `iptables`. I did not create a GCP account to implement it hands-on myself, instead I did the exercise suggested by Tim for the linux firewall on Ubuntu and Redhat.
