@@ -15,6 +15,7 @@ Welcome to my repository for the **Networking Fundamentals Bootcamp (Q2 2025)** 
 │       ├── diagramming/        # Home media server network diagram
 │       ├── env_automation/     # IaC tools (CloudFormation, Bicep, Terraform)
 │       ├── ip-address-management/  # IP setup tasks (static, dynamic)
+|       ├── cloud_networking/ # vpc setup in 3 main cloud providers
 │       ├── linux_firewall_rules/  # ufw & firewalld configs
 │       ├── linux_networking/      # EC2 cross-instance pings & tcpdump
 │       ├── packet_tracer/         # Cisco DHCP simulations
@@ -33,3 +34,4 @@ Welcome to my repository for the **Networking Fundamentals Bootcamp (Q2 2025)** 
 * 🌐 Successfully hosted a static website on a **Windows EC2 VM** using Python’s HTTP server.
 * 🚫 Used `ufw`, `firewalld`, and `iptables` to block outbound traffic for **port 4000**.
 * 📶 Verified **connectivity between Ubuntu ↔ Red Hat** EC2s using `ping` and `tcpdump`.
+* 🔧 VPC & subnets setup in 3 major cloud providers
