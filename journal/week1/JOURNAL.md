@@ -105,3 +105,12 @@ By watching the video I explored how to manage outbound traffic from a GCP VM us
 
 In this exercise, I successfully configured **VPC peering** between two AWS VPCs to enable cross-VPC communication. I created a peering connection between `bootcamp-test-vpc` and `bootcamp-test-peer-vpc`, then updated the route tables in both to allow bidirectional traffic. This setup demonstrates how VPCs in separate CIDR blocks can communicate securely without traversing the public internet — a fundamental concept for multi-tier cloud architectures.
 
+#### Azure 
+
+VPC peering connection in Azure was the easiest one because it only needs to be setup once, whereas in AWS it is not mutual by default. I also found the UI more intuitive. 
+
+
+#### GCP 
+
+I managed to successfully create a VPC and default subnets in GCP.The trickiest part was getting past the "“Data Could Not Be Loaded” error in GCP VPC Console. I provided instructions on the README.md on how I finally managed to resolve it. 
+
