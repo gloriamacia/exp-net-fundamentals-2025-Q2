@@ -35,3 +35,5 @@ Welcome to my repository for the **Networking Fundamentals Bootcamp (Q2 2025)** 
 * 🚫 Used `ufw`, `firewalld`, and `iptables` to block outbound traffic for **port 4000**.
 * 📶 Verified **connectivity between Ubuntu ↔ Red Hat** EC2s using `ping` and `tcpdump`.
 * 🔧 VPC & subnets setup in 3 major cloud providers
+
+
