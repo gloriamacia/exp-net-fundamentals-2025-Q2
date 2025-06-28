@@ -20,3 +20,6 @@ As part of the project, I successfully implemented a forward proxy solution usin
 
 I implemented a reverse proxy using Nginx on an Ubuntu EC2 instance to expose a web service running on a Windows EC2 within a private subnet. The goal was to allow external access to the internal application without assigning a public IP to the Windows instance. By configuring Nginx to forward incoming HTTP requests to the Windows host's private IP, I was able to securely route external traffic through the Ubuntu proxy, preserving internal network isolation while enabling controlled public access.
 
+# HA Proxy 
+
+In this section, the goal was to configure an Ubuntu EC2 instance as an HAProxy load balancer to distribute traffic across backend servers. However, the tutorial referenced setup files that were not provided, so I couldn't complete the hands-on part. In AWS, this functionality is typically handled by Elastic Load Balancer (ELB), which offers similar capabilities as a managed service.
