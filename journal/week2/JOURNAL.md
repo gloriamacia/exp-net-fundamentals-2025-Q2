@@ -20,6 +20,10 @@ As part of the project, I successfully implemented a forward proxy solution usin
 
 I implemented a reverse proxy using Nginx on an Ubuntu EC2 instance to expose a web service running on a Windows EC2 within a private subnet. The goal was to allow external access to the internal application without assigning a public IP to the Windows instance. By configuring Nginx to forward incoming HTTP requests to the Windows host's private IP, I was able to securely route external traffic through the Ubuntu proxy, preserving internal network isolation while enabling controlled public access.
 
-# HA Proxy 
+## HA Proxy 
 
 In this section, the goal was to configure an Ubuntu EC2 instance as an HAProxy load balancer to distribute traffic across backend servers. However, the tutorial referenced setup files that were not provided, so I couldn't complete the hands-on part. In AWS, this functionality is typically handled by Elastic Load Balancer (ELB), which offers similar capabilities as a managed service.
+
+## Pomerium
+
+In this section, I watched a video on Pomerium, an open-source identity-aware reverse proxy that enables Zero Trust access to internal web apps. It authenticates users based on identity before allowing access and removes the need for a VPN by integrating with providers like GitHub or Okta. Unlike VPNs, which grant broad access to the internal network once connected, Pomerium applies fine-grained, identity-based policies to each request. While more secure, many companies still rely on VPNs due to their simplicity, legacy systems, and familiarity.
